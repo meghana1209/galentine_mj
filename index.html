@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Will You Be My Galentine?</title>
+    <title>Will You Be My Galentine?,Janu</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
     <style>
@@ -190,6 +190,52 @@
         @media (max-width: 600px) {
             .landing h1 { font-size: 2.5rem; }
         }
+        /* --- JANANI NAME ANIMATION --- */
+.janani-name {
+    display: inline-block;
+    color: var(--pink-dark);
+    position: relative;
+    animation: glowFloat 2.5s ease-in-out infinite;
+}
+
+/* Soft glow + float */
+@keyframes glowFloat {
+    0% {
+        transform: translateY(0);
+        text-shadow: 0 0 5px rgba(255,133,179,0.3);
+    }
+    50% {
+        transform: translateY(-6px);
+        text-shadow: 0 0 15px rgba(255,133,179,0.8);
+    }
+    100% {
+        transform: translateY(0);
+        text-shadow: 0 0 5px rgba(255,133,179,0.3);
+    }
+}
+
+/* Shimmer sweep */
+.janani-name::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.7),
+        transparent
+    );
+    animation: shimmer 2.5s infinite;
+}
+
+@keyframes shimmer {
+    0% { left: -60%; }
+    100% { left: 130%; }
+}
+
     </style>
 </head>
 <body>
@@ -209,8 +255,8 @@
 
     <!-- Section 1: Landing -->
     <section class="landing">
-        <h1>Will you be my Galentine?</h1>
-        <p>Because life is better with my babygurl 🎀🌸💅. ✨</p>
+        <h1>Will you be my Galentine?,Janu🎀💖</h1>
+        <p>Because life is better with my babygurl 🎀🌸💅. ✨,We may be miles apart, but you’re always close to my heart ✨</p>
         <button onclick="startExperience()" class="btn-start">Start Here 💖</button>
     </section>
 
@@ -220,12 +266,15 @@
         <div class="memory-container">
             <div class="memory-card">
                 <span class="emoji">😂</span>
-                <h3>Chaotic Laughs</h3>
-                <p>Those temporary characters gave us permanent gossips and laughter.</p>
+               <h3>From Screens to Souls 📱</h3>
+                  <p>We started as just chats… and somehow became each other’s safe place.</p>
+
             </div>
             <div class="memory-card">
                 <span class="emoji">🎀</span>
-                <h3>Late Night Talks</h3>
+                <h3>Never Met, Still Mine 💕</h3>
+                <p>No hugs yet, no selfies together — but the bond? Unmatched.</p>
+
                 <p>Those late night rants and tea spilling sessions that sometimes end up with some deep conversations.</p>
             </div>
             <div class="memory-card">
@@ -236,8 +285,20 @@
             <div class="memory-card">
                 <span class="emoji">💅</span>
                 <h3>Always Cheering</h3>
-                <p>Nobody can do it better than me remember that babygurl.</p>
+                <p>Nobody can do it better than you remember that babygurl.</p>
             </div>
+           <div class="memory-card">
+                <h3>My Long-Distance Sister 🌍</h3>
+             <p>You’re proof that distance means nothing when hearts connect.</p>
+
+            </div>
+             <div class="memory-card">
+              <h3>Future Memories Await ✨</h3>
+               <p>One day we’ll laugh about how we were besties before we even met.</p>
+
+
+            </div>
+
         </div>
         <a href="#question" class="btn-start" style="margin-top: 40px; background: var(--lavender); color: var(--text-color); text-decoration: none;">One more thing...</a>
     </section>
@@ -245,7 +306,7 @@
     <!-- Section 3: The Question -->
     <section id="question">
         <div class="question-box">
-            <h2>So... will you be my Galentine?</h2>
+            <h2>So...Janu .... will you be my Galentine?</h2>
             <div class="btn-group">
                 <button class="btn-yes" onclick="showCelebration()">YES, obviously!</button>
                 <button class="btn-no" id="noBtn">No</button>
@@ -262,6 +323,12 @@
             <p><strong>When:</strong> Whenever you want jaanemann</p>
             <p><strong>Where:</strong> Our favorite spot</p>
             <p style="margin-top: 20px;">I like me better when I'm with you! 💖</p>
+            <p><strong>When:</strong> The day we finally meet ✨</p>
+           <p><strong>Where:</strong> Somewhere we both dream about 🌸</p>
+          <p style="margin-top: 20px;">Never met, yet you mean so much to me 💖</p>
+<p>Distance made us strangers… destiny made us sisters 💕</p>
+<p>You’re my favorite “we never met but you’re my person” 💖</p>
+
         </div>
     </section>
 
